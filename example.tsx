@@ -74,7 +74,7 @@ ReactDOM.render(
           <Route path="/layout" component={LayoutExample} />
           <Route path="/form" component={FormExample} />
           <Route path="/scroll" component={ScrollExample} />
-          <Route path="/" component={ButtonExample} />
+          <Route exact path="/" component={ButtonExample} />
         </main>
       </div>
     </div>
