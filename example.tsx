@@ -26,7 +26,7 @@ ReactDOM.render(
         </div>
         <a
           className={sc1("footer")}
-          href="https://github.com/wgbcode/wu-ui-react"
+          href="https://github.com/wgbcode/wu-ui-react-2"
         >
           <Icon name="github" />
         </a>
