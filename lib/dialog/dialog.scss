@@ -1,0 +1,70 @@
+@import "../helpers/helpers.scss";
+
+.wu-dialog-wrapper {
+  @extend %flexCenter;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: fade-out(#000000, 0.5);
+  height: 100vh;
+  width: 100vw;
+  .wu-dialog {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 20%;
+    height: 230px;
+    width: 500px;
+    background: white;
+    border-radius: 4px;
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 16px;
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: 500;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+      .wu-dialog-icon {
+        height: 1.5em;
+        width: 1.5em;
+        padding-right: 16px;
+        .fui-icon {
+          height: 1em;
+          width: 1em;
+        }
+      }
+    }
+    &-main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+      flex-grow: 1;
+      padding: 0 24px;
+      color: rgba(0, 0, 0, 0.65);
+      font-size: 14px;
+      line-height: 22px;
+      font-weight: 400;
+    }
+    &-footer {
+      text-align: end;
+      bottom: 8px;
+      right: 8px;
+      color: rgba(0, 0, 0, 0.65);
+      font-size: 14px;
+      line-height: 22px;
+      font-weight: 400;
+      padding: 10px 16px;
+      &-cancel {
+        @extend %cancelButton;
+      }
+      &-ensure {
+        @extend %ensureButton;
+      }
+    }
+  }
+}

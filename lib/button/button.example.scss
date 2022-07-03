@@ -1,0 +1,16 @@
+@import "../helpers/helpers.scss";
+@import "../mixin/mixin.scss";
+
+.wu-button-example {
+  @include commonExample;
+  &-code-content {
+    margin-bottom: 32px;
+    &-items {
+      flex-direction: row;
+      &-button2 {
+        background: #bec8c8;
+        margin-bottom: 16px;
+      }
+    }
+  }
+}

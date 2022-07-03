@@ -1,0 +1,13 @@
+.wu-layout-noAside {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 100%;
+}
+.wu-layout-hasAside {
+  display: flex;
+  flex-grow: 1;
+  .wu-layout-noAside {
+    flex-grow: 1;
+  }
+}

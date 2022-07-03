@@ -1,0 +1,8 @@
+@import "../helpers/helpers.scss";
+@import "../mixin/mixin.scss";
+
+.wu-scroll-example {
+  @include commonExample;
+  &-content-items {
+  }
+}

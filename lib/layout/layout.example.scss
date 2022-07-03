@@ -1,0 +1,36 @@
+@import "../helpers/helpers.scss";
+@import "../mixin/mixin.scss";
+
+.wu-layout-example {
+  @include commonExample;
+  &-code-content-items-layout {
+    padding: 32px;
+    .gu-layout-x {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #7dbcea;
+      color: white;
+      height: 50px;
+      font-size: 14px;
+    }
+    .gu-layout-y {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #108ee9;
+      color: white;
+      flex-grow: 1;
+      font-size: 14px;
+    }
+    .gu-layout-z {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #3ba0e9;
+      color: white;
+      width: 15vw;
+      font-size: 14px;
+    }
+  }
+}

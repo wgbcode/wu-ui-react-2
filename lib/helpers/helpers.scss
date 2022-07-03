@@ -1,0 +1,47 @@
+$hei: -apple-system, "Noto Sans", "Helvetica Neue", Helvetica, "Nimbus Sans L",
+  Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB",
+  "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN",
+  "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti",
+  SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+
+$song: Georgia, "Nimbus Roman No9 L", "Songti SC", "Noto Serif CJK SC",
+  "Source Han Serif SC", "Source Han Serif CN", STSong, "AR PL New Sung",
+  "AR PL SungtiL GB", NSimSun, SimSun, "TW\-Sung", "WenQuanYi Bitmap Song",
+  "AR PL UMing CN", "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE",
+  PMingLiU, MingLiU, serif;
+
+$apple: Avenir, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+  Helvetica Neue, Arial, Noto Sans, sans-serif, apple color emoji,
+  segoe ui emoji, Segoe UI Symbol, noto color emoji, sans-serif;
+
+%flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%button {
+  font-size: 14px;
+  line-height: 22px;
+  padding: 4px 15px;
+  border-radius: 4px;
+  margin: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+%ensureButton {
+  @extend %button;
+  background-color: #1890ff;
+  color: white;
+  &:hover {
+    background-color: #5aa7f0;
+  }
+}
+%cancelButton {
+  @extend %button;
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.65);
+  &:hover {
+    border-color: #1890ff;
+    color: #1890ff;
+  }
+}

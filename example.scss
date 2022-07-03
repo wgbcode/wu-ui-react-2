@@ -1,0 +1,72 @@
+@import "./lib/helpers/helpers.scss";
+
+.wu-webPage {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  &-navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px 16px 32px;
+    box-shadow: 0 1.5px 5px rgb(226, 216, 216);
+    &-header {
+      display: flex;
+      align-items: center;
+      .fui-icon {
+        height: 2em;
+        width: 2em;
+      }
+      &-text {
+        padding-left: 24px;
+        font-size: 16px;
+      }
+    }
+    &-footer {
+      padding-right: 32px;
+      .fui-icon {
+        height: 2em;
+        width: 2em;
+      }
+    }
+  }
+  &-content {
+    display: flex;
+    flex-grow: 1;
+    font-family: $hei;
+    overflow: hidden;
+    &-aside {
+      border-right: 1px solid #d9d9d9;
+      margin: 48px 0;
+      &-title {
+        padding: 0px 0 24px 60px;
+        font-size: 16px;
+        font-weight: 500;
+      }
+      &-nav {
+        li {
+          font-size: 16px;
+          a {
+            display: block;
+            padding: 16px 108px 16px 60px;
+            text-decoration: none;
+            color: #6e6e6e;
+            white-space: nowrap;
+            &:hover {
+              color: #2b76ae;
+            }
+            &.active {
+              background: #e6f7ff;
+              border-right: 3px solid #2b76ae;
+            }
+          }
+        }
+      }
+    }
+    &-main {
+      flex-grow: 1;
+      overflow: auto;
+      padding: 48px 100px;
+    }
+  }
+}

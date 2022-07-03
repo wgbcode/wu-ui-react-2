@@ -1,0 +1,13 @@
+@import "../helpers/helpers.scss";
+@import "../mixin/mixin.scss";
+
+.wu-icon-example {
+  @include commonExample;
+  &-code-content-items {
+    .fui-icon {
+      height: 2em;
+      width: 2em;
+      margin: 16px;
+    }
+  }
+}
