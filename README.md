@@ -1,8 +1,6 @@
-`React` `React-dom`  `React-Router-dom`   `TypeScript` `SCSS` `Webpack` 
-
 ## 项目描述
 
-这是一个基于 React 框架实现的 UI 组件库，该项目总共设置了 6 个 UI 组件，每个组件都实现了查看、操作、代码查询和组件参数查看的功能。
+这是一个基于 React 框架实现的 UI 组件库，该项目总共设置了 6 个 UI 组件，每个组件都实现了查看、操作、代码查询和组件参数查看的功能，技术栈包括 `React` `React-dom`  `React-Router-dom`   `TypeScript` `SCSS` `Webpack` 。
 
 ## 项目使用
 
